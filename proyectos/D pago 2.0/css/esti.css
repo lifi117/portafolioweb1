@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+body{
+    font-family: 'open sans';
+}
+
+nav{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 270;
+    margin-right: 10px;
+}
+
+
+
+.icono{
+    display: block;
+    animation: moverIzquierda 1s ease-in;
+    
+}
+
+.enlaces{
+    animation: moverIzquierda 1s ease-in;
+    
+}
+
+header{
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2fecc3, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2fecc3, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+height: auto;
+padding: auto;
+width: 100%;
+
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+img{
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    animation: moverArriba 1s ease-in;
+    width: auto;
+}
+
+.textos{
+    width: 50%;
+    color: #fff;
+}
+
+.textos h1{
+    font-size: 50px;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos h2{
+    font-size: 30px;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: moverArriba 1s ease-in;
+}
+
+.wave{
+    height: 100px;
+    width: 100%;
+    background: #009FFF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2fecc3, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2fecc3, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+.uno{
+    
+    clip-path: circle(0% at 0 0);
+}
+
+.dos{
+    clip-path: circle(140% at 0 0);
+}
+
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverArriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width:1000px){
+    img{
+        height: 400px;
+}
+}
+
+
+@media screen and (max-width:800px){
+    img{
+        height: 370px;
+    }
+
+    .textos h1{
+        font-size: 70px;
+    }
+
+    .textos h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:700px){
+    img{
+        height: 250px;
+    }
+
+    .textos h1{
+        font-size: 40px;
+    }
+
+    .textos h2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .textos{
+        width: 100%;
+        text-align: center;
+    }
+    img{
+        height: 370px;
+    }
+
+    .textos h1{
+        font-size: 70px;
+    }
+
+    .textos h2{
+        font-size: 25px;
+    }
+
+  
+}
+
+@media screen and (max-width:376px){
+    img{
+        height: 260px;
+    }
+
+    .textos h1{
+        font-size: 35px;
+    }
+
+    .textos a{
+        width: 120px;
+    }
+
+    .textos h2{
+        font-size: 15px;
+    }
+    nav a{
+        font-size: 13px;
+    }
+
+
+}
+
+@media screen and (max-width:270px){
+    img{
+        height: 220px;
+    }
+
+    .textos h1{
+        font-size: 20px;
+    }
+
+    .textos a{
+        height: 50px;
+    }
+
+    .textos h2{
+        font-size: 13px;
+    }
+
+    nav a{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:243px){
+    img{
+        height: 200px;
+    }
+
+    .textos h1{
+        font-size: 20px;
+    }
+
+    .textos a{
+        height: 50px;
+    }
+
+    .textos h2{
+        font-size: 13px;
+    }
+
+    nav a{
+        font-size: 9px;
+    }
+}
+
+
+@media screen and (max-width:225px){
+    img{
+        height: 160px;
+    }
+
+    .textos h1{
+        font-size: 20px;
+    }
+
+    .textos a{
+        height: 50px;
+    }
+
+    .textos h2{
+        font-size: 13px;
+    }
+
+    nav a{
+        font-size: 9px;
+    }
+}
+
+
+
+   
+

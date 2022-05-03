@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="ahoraci.css">
+  <link rel="shortcut icon" href="PS.png" type="img/x-icon">
+  <title>Iniciar Sesion</title>
+</head>
+<body>
+  <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Iniciar Sesion</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="img/si.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Correo Electronico</b></label>
+      <input type="text" placeholder="Correo" name="uname" required>
+
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Poner Contraseña" name="psw" required>
+
+      <button type="submit">Iniciar Sesion</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Recordarme
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Ulvidaste Tu <a href="#">Contraseña?</a></span>
+    </div>
+  </form>
+</div>
+<img src="PS.png" alt="" height="390px" width="237px">
+<h2 style="color: aquamarine;">Paga Facil,Paga Seguro</h2>
+</body>
+</html>
